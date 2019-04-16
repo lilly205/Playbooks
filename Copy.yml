@@ -1,0 +1,14 @@
+---
+- name: Copy files
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: copies file to new location
+      copy:
+        src: /home/test/Documents/MoveMe.txt
+        dest: /home/test/Downloads/ansible/MoveMe.txt
+        owner: test
+        group: test
+        mode: 0644
+
+#ansible-playbook PLAYBOOK NAME -i localhost, -v
