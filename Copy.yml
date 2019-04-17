@@ -2,7 +2,6 @@
 - name: Copy files
   hosts: localhost
   connection: local
-  become: true
   tasks:
     - name: copies file to new location
       copy:
@@ -11,5 +10,6 @@
         owner: test
         group: test
         mode: 0644
+      become: true
 
 #ansible-playbook PLAYBOOK NAME -i localhost, -v
