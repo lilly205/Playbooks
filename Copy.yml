@@ -2,6 +2,8 @@
 - name: Copy files
   hosts: localhost
   tasks:
+    - name: Host
+      debug: var=ansible_host
     - name: copies file to new location
       copy:
         src: /home/test/Documents/MoveMe.txt
