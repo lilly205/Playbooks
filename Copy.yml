@@ -6,9 +6,9 @@
       copy:
         src: /home/test/Documents/MoveMe.txt
         dest: /home/test/Downloads/ansible/MoveMe.txt
-        owner: test
-        group: test
-        mode: 0644
+        owner: root
+        group: root
+        mode: 0600
       become: true
 
 #ansible-playbook PLAYBOOK NAME -i localhost, -v
