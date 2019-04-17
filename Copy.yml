@@ -9,6 +9,5 @@
         owner: test
         group: test
         mode: 0644
-      become: yes
 
 #ansible-playbook PLAYBOOK NAME -i localhost, -v
