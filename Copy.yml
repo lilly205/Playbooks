@@ -1,7 +1,6 @@
 ---
 - name: Copy files
   hosts: localhost
-  connection: local
   tasks:
     - name: copies file to new location
       copy:
