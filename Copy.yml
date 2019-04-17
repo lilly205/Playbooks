@@ -8,8 +8,6 @@
       copy:
         src: /home/test/Documents/MoveMe.txt
         dest: /home/test/Downloads/ansible/MoveMe.txt
-      become: yes
-      become_method: sudo
-      become_user: test
+
 
 #ansible-playbook PLAYBOOK NAME -i localhost, -v
