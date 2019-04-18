@@ -7,7 +7,7 @@
     - name: copies file to new location
       copy:
         src: /home/test/Documents/MoveMe.txt
-        dest: /home/Downloads
+        dest: /home/Downloads/MoveMe.txt
 
 
 #ansible-playbook PLAYBOOK NAME -i localhost, -v
