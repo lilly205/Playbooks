@@ -1,6 +1,6 @@
 ---
 - name: Copy files
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Host
       debug: var=ansible_host
