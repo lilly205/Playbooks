@@ -1,13 +1,9 @@
 ---
-- name: Copy files
-  hosts: all
+- name: Copy Files
+  hosts: TestServers
   tasks:
-    - name: Host
-      debug: var=ansible_host
-    - name: copies file to new location
-      copy:
-        src: /home/test/Documents/MoveMe.txt
-        dest: /home/test/Downloads/ansible/MoveMe.txt
-
-
+   - name: copies file to new location
+     copy:
+       src: /home/test/Documents/MoveMe.txt
+       dest: /home/test/Downloads/MoveMe.txt
 #ansible-playbook PLAYBOOK NAME -i localhost, -v
